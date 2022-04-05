@@ -1,14 +1,14 @@
 'use strict';
 
 //welcome message
-alert('Welcome to my webpage! Consider this my greeting to you! Welcome to the page!');
+alert('Welcome to my webpage! Consider this my greeting to you! I hope you enjoy your visit!');
 
 //establishes siteVisitor value
-let siteVisitor = prompt('Hey! What is your name?');
+let siteVisitor = prompt(`Let's get to know each other, What is your name?`);
 
 alert(`Welcome ${siteVisitor}, lets play a guessing game. But you gotta answer yes, no, y, or n. Cool? Cool.`);
 
-//question game 
+//question game
 let questionOne = prompt('Have I ever tended bar before?').toLowerCase();
 
 if(questionOne === 'yes' || questionOne === 'y'){

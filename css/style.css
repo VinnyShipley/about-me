@@ -1,0 +1,43 @@
+header{
+  background-color: gray;
+  line-height: 300%;
+}
+
+header h1{
+  text-align: center;
+  font-weight: bolder;
+  font-family: Georgia, serif;
+  font-size: xx-large;
+}
+
+body{
+  background-color: rgb(147, 177, 187);
+}
+
+p{
+  font-family: sans-serif;
+  margin-right: 50%;
+  text-indent: 5%;
+}
+
+main h2{
+  font-weight: bold;
+  font-size: x-large;
+  margin-top: 10%;
+  background-color: bisque;
+  margin-right: 50%;
+}
+
+#top{
+  margin-top: 5%;
+}
+
+img{
+  float:right;
+  position: absolute
+    
+}
+
+h2, p{
+  float:left
+}

@@ -34,14 +34,15 @@ function q2() {
 }
 
 let questionThree = prompt('Have I ever ridden an elephant before?').toLowerCase();
-
-if(questionThree === 'yes' || questionThree ==='y'){
-  //console.log('q 3 correct');
-  alert(`Nope. Sorry to disappoint you ${siteVisitor}, but this site isn't me just bragging, it's also about asking the hard hitting questions like this next one.`);
-} else if(questionThree === 'no' || questionThree === 'n'){
-  alert(`You're right ${siteVisitor}! I wouldn't try them either way, but I feel like elephant taste terrible for some reason`);
-  score = score + 1;
-} else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+function q3() {
+  if(questionThree === 'yes' || questionThree ==='y'){
+    //console.log('q 3 correct');
+    alert(`Nope. Sorry to disappoint you ${siteVisitor}, but this site isn't me just bragging, it's also about asking the hard hitting questions like this next one.`);
+  } else if(questionThree === 'no' || questionThree === 'n'){
+    alert(`You're right ${siteVisitor}! I wouldn't try them either way, but I feel like elephant taste terrible for some reason`);
+    score = score + 1;
+  } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+}
 
 let questionFour = prompt('Did the act of googling if it was legal to eat elephant make me sad while writing this codeblock?').toLowerCase();
 

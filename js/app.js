@@ -19,7 +19,9 @@ function q1() {
     alert(`Correct ${siteVisitor}, I have in fact tended a couple bars in my day. Maybe I even served you before!`);
   } else if(questionOne === 'no' || questionOne === 'n'){
     alert(`Sorry ${siteVisitor}, but I've spent many a year behind the stick at a couple places in the Bellingham area.`);
-  } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+  } else {
+    alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+  }
 }
 q1();
 
@@ -31,7 +33,9 @@ function q2() {
     score = score + 1;
   } else if(questionTwo === 'no' || questionTwo === 'n'){
     alert(`Sorry ${siteVisitor}, but I have jumped out of a perfectly good airplane.`);
-  } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+  } else {
+    alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+  }
 }
 q2();
 
@@ -43,32 +47,38 @@ function q3() {
   } else if(questionThree === 'no' || questionThree === 'n'){
     alert(`You're right ${siteVisitor}! I wouldn't try them either way, but I feel like elephant taste terrible for some reason`);
     score = score + 1;
-  } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+  } else {
+    alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+  }
 }
 q3();
 
-let questionFour = prompt('Did the act of googling if it was legal to eat elephant make me sad while writing this codeblock?').toLowerCase();
 function q4() {
+  let questionFour = prompt('Did the act of googling if it was legal to eat elephant make me sad while writing this codeblock?').toLowerCase();
   if(questionFour === 'yes' || questionFour ==='y'){
     //console.log('q 4 correct');
     alert(`Good call, ${siteVisitor}. But apparently elephant tastes like veal. Troubling stuff.`);
     score = score + 1;
-  } else if(questionFour === 'no' || questionFour === 'n'){
+  } else if(questionFour === 'no' || questionFour === 'n') {
     alert(`Do you think I'm heartless, ${siteVisitor}? Shame on you.`);
-  } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+  } else {
+    alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+  }
 }
 q4();
 
 let questionFive = prompt('Should I lay off the elephant material?').toLowerCase();
-
-if(questionFive === 'yes' || questionFive ==='y'){
-  //console.log('q 5 correct');
-  alert('Agreed');
-  score = score + 1;
-} else if(questionFive === 'no' || questionFive === 'n'){
-  alert('Have I not done enough?');
-} else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
-
+function q5() {
+  if(questionFive === 'yes' || questionFive ==='y'){
+    //console.log('q 5 correct');
+    alert('Agreed');
+    score = score + 1;
+  } else if(questionFive === 'no' || questionFive === 'n'){
+    alert('Have I not done enough?');
+  } else {
+    alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+  }
+}
 //6th question with 4 max guesses
 
 //Katharine, Guy, Elizabeth all helped out with the 6th question, and I used a lot of the same code from q6 in q 7

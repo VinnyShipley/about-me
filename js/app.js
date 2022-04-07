@@ -12,24 +12,26 @@ alert(`Welcome ${siteVisitor}, lets play a guessing game. But you gotta answer y
 
 //question game
 let questionOne = prompt('Have I ever tended bar before?').toLowerCase();
-
-if(questionOne === 'yes' || questionOne === 'y'){
-  //console.log('q 1 correct');
-  score = score + 1;
-  alert(`Correct ${siteVisitor}, I have in fact tended a couple bars in my day. Maybe I even served you before!`);
-} else if(questionOne === 'no' || questionOne === 'n'){
-  alert(`Sorry ${siteVisitor}, but I've spent many a year behind the stick at a couple places in the Bellingham area.`);
-} else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+function q1() {
+  if(questionOne === 'yes' || questionOne === 'y'){
+    //console.log('q 1 correct');
+    score = score + 1;
+    alert(`Correct ${siteVisitor}, I have in fact tended a couple bars in my day. Maybe I even served you before!`);
+  } else if(questionOne === 'no' || questionOne === 'n'){
+    alert(`Sorry ${siteVisitor}, but I've spent many a year behind the stick at a couple places in the Bellingham area.`);
+  } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+}
 
 let questionTwo = prompt('Have I ever gone skydiving before?').toLowerCase();
-
-if(questionTwo === 'yes' || questionTwo ==='y'){
-  //console.log('question 2 correct');
-  alert(`That is also correct ${siteVisitor}, I have gone skydiving before. I only had three panic attacks on the flight up`);
-  score = score + 1;
-} else if(questionTwo === 'no' || questionTwo === 'n'){
-  alert(`Sorry ${siteVisitor}, but I have jumped out of a perfectly good airplane.`);
-} else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+function q2() {
+  if(questionTwo === 'yes' || questionTwo ==='y'){
+    //console.log('question 2 correct');
+    alert(`That is also correct ${siteVisitor}, I have gone skydiving before. I only had three panic attacks on the flight up`);
+    score = score + 1;
+  } else if(questionTwo === 'no' || questionTwo === 'n'){
+    alert(`Sorry ${siteVisitor}, but I have jumped out of a perfectly good airplane.`);
+  } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+}
 
 let questionThree = prompt('Have I ever ridden an elephant before?').toLowerCase();
 

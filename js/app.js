@@ -21,6 +21,7 @@ function q1() {
     alert(`Sorry ${siteVisitor}, but I've spent many a year behind the stick at a couple places in the Bellingham area.`);
   } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
 }
+q1();
 
 let questionTwo = prompt('Have I ever gone skydiving before?').toLowerCase();
 function q2() {
@@ -32,6 +33,7 @@ function q2() {
     alert(`Sorry ${siteVisitor}, but I have jumped out of a perfectly good airplane.`);
   } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
 }
+q2();
 
 let questionThree = prompt('Have I ever ridden an elephant before?').toLowerCase();
 function q3() {
@@ -43,16 +45,19 @@ function q3() {
     score = score + 1;
   } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
 }
+q3();
 
 let questionFour = prompt('Did the act of googling if it was legal to eat elephant make me sad while writing this codeblock?').toLowerCase();
-
-if(questionFour === 'yes' || questionFour ==='y'){
-  //console.log('q 4 correct');
-  alert(`Good call, ${siteVisitor}. But apparently elephant tastes like veal. Troubling stuff.`);
-  score = score + 1;
-} else if(questionFour === 'no' || questionFour === 'n'){
-  alert(`Do you think I'm heartless, ${siteVisitor}? Shame on you.`);
-} else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+function q4() {
+  if(questionFour === 'yes' || questionFour ==='y'){
+    //console.log('q 4 correct');
+    alert(`Good call, ${siteVisitor}. But apparently elephant tastes like veal. Troubling stuff.`);
+    score = score + 1;
+  } else if(questionFour === 'no' || questionFour === 'n'){
+    alert(`Do you think I'm heartless, ${siteVisitor}? Shame on you.`);
+  } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
+}
+q4();
 
 let questionFive = prompt('Should I lay off the elephant material?').toLowerCase();
 

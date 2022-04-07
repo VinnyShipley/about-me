@@ -41,3 +41,7 @@ img{
 h2, p{
   float:left
 }
+
+li{
+  display: inline;
+}

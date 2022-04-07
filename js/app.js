@@ -61,7 +61,6 @@ if(questionFive === 'yes' || questionFive ==='y'){
   alert('Have I not done enough?');
 } else alert(`Hold your horses there ${siteVisitor}. I thought I was pretty clear I needeed a yes, no, y, or n answer from you. This game is a lot more fun if you do`);
 
-
 //6th question with 4 max guesses
 
 //Katharine, Guy, Elizabeth all helped out with the 6th question, and I used a lot of the same code from q6 in q 7
@@ -85,23 +84,23 @@ for(let i = 0; i <= 4; i++){
   }
 }
 
-let myArray = ['daiquiri', 'old fashioned', 'manhattan'];
+let myArray = ['daiquiri ', 'old fashioned ', 'manhattan'];
 
 for(let i = 0; i <= 5; i++){
 
-
   let questionSeven = prompt('What is one of my three favorite cockatails?').toLowerCase();
+
   if(questionSeven === myArray[0]){
     alert('Daiquiris are one of my favorites!');
-    score = score +1;
+    score = score + 1;
     break;
   } else if(questionSeven === myArray[1]){
     alert('Old fashioneds are one of my favorites!');
-    score = score +1;
+    score = score + 1;
     break;
   } else if(questionSeven === myArray[2]){
     alert('Manhattans are one of my favorites!');
-    score = score +1;
+    score = score + 1;
     break;
   } else if((questionSeven !== myArray) && (i <= 5)){
     alert(`That's not one of my favorite drinks.`);

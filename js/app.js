@@ -68,14 +68,14 @@ if(questionFive === 'yes' || questionFive ==='y'){
 
 for(let i = 0; i <= 4; i++){
 
-  let questionSix = prompt('What is the magic number?');
+  let questionSix = parseInt(prompt('What is the magic number?'));
   let south = 3;
 
   if((questionSix > south) && (i <= 2)){
     alert('Too high');
   } else if((questionSix < south) && (i <= 2)){
     alert('Too low');
-  } else if((questionSix = south) && (i <= 2)){
+  } else if((questionSix === south) && (i <= 2)){
     alert('You got it!');
     score = score + 1;
     break;

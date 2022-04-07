@@ -82,23 +82,22 @@ function q5() {
 //6th question with 4 max guesses
 
 //Katharine, Guy, Elizabeth all helped out with the 6th question, and I used a lot of the same code from q6 in q 7
-
+function q6() {
 for(let i = 0; i <= 4; i++){
-
-  let questionSix = parseInt(prompt('What is the magic number?'));
-  let south = 3;
-
-  if((questionSix > south) && (i <= 3)){
-    alert('Too high');
-  } else if((questionSix < south) && (i <= 3)){
-    alert('Too low');
-  } else if((questionSix === south) && (i <= 3)){
-    alert('You got it!');
-    score = score + 1;
-    break;
-  } else {
-    alert('Better luck next time. It was three');
-    break;
+    let questionSix = parseInt(prompt('What is the magic number?'));
+    let south = 3;
+    if((questionSix > south) && (i <= 3)){
+      alert('Too high');
+    } else if((questionSix < south) && (i <= 3)){
+      alert('Too low');
+    } else if((questionSix === south) && (i <= 3)){
+      alert('You got it!');
+      score = score + 1;
+      break;
+    } else {
+      alert('Better luck next time. It was three');
+      break;
+    }
   }
 }
 

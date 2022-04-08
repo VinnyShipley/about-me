@@ -16,16 +16,18 @@ body{
 
 p{
   font-family: sans-serif;
-  margin-right: 50%;
-  text-indent: 5%;
 }
 
-main h2{
+main{
   font-weight: bold;
   font-size: x-large;
-  margin-top: 10%;
-  background-color: bisque;
+  margin-top: 5%;
+
   margin-right: 50%;
+  margin-left: 5%;
+  flex-direction: column;
+  height: 100%;
+  
 }
 
 #top{
@@ -34,14 +36,29 @@ main h2{
 
 img{
   float:right;
-  position: absolute
-    
+  position: absolute;
+  margin-bottom: 10%;
+  border-radius: 25px;
 }
 
 h2, p{
-  float:left
+  float:left;
+}
+
+.title{
+  margin-top: 3%;
+  text-align: center;
+  display: inline-block;
+  background-color: whitesmoke;
+  border-top: 3%;
 }
 
 li{
-  display: inline;
+  position: relative;
+  margin-top: 0px;
+  font-family: sans-serif;
+}
+
+ol{
+  margin-top: 58%;
 }

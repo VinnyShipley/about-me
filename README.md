@@ -1,10 +1,12 @@
-# LAB - 02
-
 ## About Me Site
 
 I built a site that asks you a series of questions about me, as well aas the user's name. It does all that is asked of it well.
 
 ## Author: Vinny Shipley
+
+Driver: Ben Small
+
+Navigator: Vinny Shipley
 
 ## Links and Resources
 

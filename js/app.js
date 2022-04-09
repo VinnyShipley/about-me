@@ -2,19 +2,15 @@
 
 let score = 0;
 
-//welcome message
 alert('Welcome to my webpage! Consider this my greeting to you! I hope you enjoy your visit!');
 
-//establishes siteVisitor value
 let siteVisitor = prompt(`Let's get to know each other, What is your name?`);
 
 alert(`Welcome ${siteVisitor}, lets play a guessing game. But you gotta answer yes, no, y, or n. Cool? Cool.`);
 
-//question game
 let questionOne = prompt('Have I ever tended bar before?').toLowerCase();
 function q1() {
   if(questionOne === 'yes' || questionOne === 'y'){
-    //console.log('q 1 correct');
     score = score + 1;
     alert(`Correct ${siteVisitor}, I have in fact tended a couple bars in my day. Maybe I even served you before!`);
   } else if(questionOne === 'no' || questionOne === 'n'){
@@ -28,7 +24,6 @@ q1();
 let questionTwo = prompt('Have I ever gone skydiving before?').toLowerCase();
 function q2() {
   if(questionTwo === 'yes' || questionTwo ==='y'){
-    //console.log('question 2 correct');
     alert(`That is also correct ${siteVisitor}, I have gone skydiving before. I only had three panic attacks on the flight up`);
     score = score + 1;
   } else if(questionTwo === 'no' || questionTwo === 'n'){
@@ -42,7 +37,6 @@ q2();
 let questionThree = prompt('Have I ever ridden an elephant before?').toLowerCase();
 function q3() {
   if(questionThree === 'yes' || questionThree ==='y'){
-    //console.log('q 3 correct');
     alert(`Nope. Sorry to disappoint you ${siteVisitor}, but this site isn't me just bragging, it's also about asking the hard hitting questions like this next one.`);
   } else if(questionThree === 'no' || questionThree === 'n'){
     alert(`You're right ${siteVisitor}! I wouldn't try them either way, but I feel like elephant taste terrible for some reason`);
@@ -56,7 +50,6 @@ q3();
 function q4() {
   let questionFour = prompt('Did the act of googling if it was legal to eat elephant make me sad while writing this codeblock?').toLowerCase();
   if(questionFour === 'yes' || questionFour ==='y'){
-    //console.log('q 4 correct');
     alert(`Good call, ${siteVisitor}. But apparently elephant tastes like veal. Troubling stuff.`);
     score = score + 1;
   } else if(questionFour === 'no' || questionFour === 'n') {
@@ -70,7 +63,6 @@ q4();
 let questionFive = prompt('Should I lay off the elephant material?').toLowerCase();
 function q5() {
   if(questionFive === 'yes' || questionFive ==='y'){
-    //console.log('q 5 correct');
     alert('Agreed');
     score = score + 1;
   } else if(questionFive === 'no' || questionFive === 'n'){
@@ -80,9 +72,7 @@ function q5() {
   }
 }
 q5();
-//6th question with 4 max guesses
 
-//Katharine, Guy, Elizabeth all helped out with the 6th question, and I used a lot of the same code from q6 in q 7
 function q6() {
 for(let i = 0; i <= 4; i++){
     let questionSix = parseInt(prompt('What is the magic number?'));

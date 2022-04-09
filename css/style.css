@@ -1,64 +1,34 @@
-header{
+*{
   background-color: gray;
-  line-height: 300%;
 }
 
-header h1{
+h1{
+  font-size: 4em;
   text-align: center;
-  font-weight: bolder;
-  font-family: Georgia, serif;
-  font-size: xx-large;
+  background-color: aliceblue;
 }
 
-body{
-  background-color: rgb(147, 177, 187);
+div.text{
+  width: max-content;
+  max-width: 50%;
 }
 
-p{
-  font-family: sans-serif;
-}
-
-main{
-  font-weight: bold;
-  font-size: x-large;
-  margin-top: 5%;
-
-  margin-right: 50%;
-  margin-left: 5%;
-  flex-direction: column;
-  height: 100%;
-  
-}
-
-#top{
-  margin-top: 5%;
+h2 {
+  font-size: 3.5vw;
+  width: 50%;
+  color: blanchedalmond;
+  border-radius: 25px;
+  height: fit-content;
 }
 
 img{
-  float:right;
-  position: absolute;
-  margin-bottom: 10%;
-  border-radius: 25px;
+  max-width: 50%;
 }
 
-h2, p{
-  float:left;
-}
-
-.title{
-  margin-top: 3%;
-  text-align: center;
-  display: inline-block;
-  background-color: whitesmoke;
-  border-top: 3%;
+p{
+  font-size: 1.2em;
 }
 
 li{
-  position: relative;
-  margin-top: 0px;
-  font-family: sans-serif;
-}
-
-ol{
-  margin-top: 58%;
+  font-size: 1.2em;
 }
